@@ -24,7 +24,7 @@ To start the app (from the root of the project)
 yarn start
 ```
 
-## Testing
+## Testing (TBD)
 
 ```
 yarn test
