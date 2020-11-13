@@ -8,8 +8,17 @@ import {
   CloseOutlined,
   CheckOutlined,
 } from "@ant-design/icons";
+import moment from "moment";
 
 import "./TodoList.css";
+
+const getDaysRemaning = (deadline, completed) => {
+  if (completed) return "";
+
+  if (moment().isAfter(moment(deadline))) return "Deadline Passed";
+
+  return `${moment(deadline).diff(moment(), "days")} day(s) remaining`;
+};
 
 const TodoList = ({
   dataSource,
@@ -67,6 +76,7 @@ const TodoList = ({
             {item.completed ? `Unmark Todo` : `Mark as Complete`}
           </Button>
         </Popconfirm>,
+        getDaysRemaning(item.deadline, item.completed),
       ];
 
       return (

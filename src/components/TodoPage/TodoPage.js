@@ -26,7 +26,6 @@ const TodoPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [dataSource, setDataSource] = useState([]);
 
-  console.log(selectedTodo);
   const [form] = Form.useForm();
 
   const { todos, loading, errorText } = useSelector((state) => state);
