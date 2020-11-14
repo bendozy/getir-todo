@@ -1,6 +1,6 @@
 # Getir Todo App React Project
 
-> An simple todo app hosted here [https://getir-frontend.herokuapp.com/](https://getir-frontend.herokuapp.com/)
+> A simple todo app hosted here [https://getir-frontend.herokuapp.com/](https://getir-frontend.herokuapp.com/)
 
 ## Usage
 
