@@ -22,7 +22,8 @@ const TodoForm = ({
           : undefined,
       });
     }
-  }, [initialValues]);
+  }, [form, initialValues]);
+
   return (
     <Modal
       visible={visible}
